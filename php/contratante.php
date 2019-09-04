@@ -39,58 +39,65 @@
                     <div class="card-image">
                     <img src="../img/img1.jpg">
                     <span class="card-title">Mecânico</span>
-                    <button class="btn-floating halfway-fab waves-effect orange lighten-2" ><a class="btn modal-trigger" href="#modal1"></a>
-                                        
-                    <!-- Modal Trigger -->
-                    
-
-                    <!-- Modal Structure -->
-                    <div id="modal1" class="modal">
-                    <div class="modal-content">
-                        <h4>Modal Header</h4>
-                        <p>A bunch of text</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-                    </div>
-                    </div>
-                </button>
                     </div>
                     <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    <p>Profissional responsável por cuidar da manutenção de veículos, motocicletas, motores e similares,
+                         desmontando, reparando, substituindo, ajustando e lubrificando o motor e peças anexas.</p>
                     </div>
+                    <a class="waves-effect waves-light btn  orange lighten-2 waves-effect waves-light btn modal-trigger" href="#cadastro" id="botao">Contratar</a>
+                        <!-- Modal Structure -->
+                        <div id="cadastro" class="modal">
+                            <div class="modal-content">
+                            <h4>Contrato</h4>
+                            <div class="row">
+                            <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Nome Completo</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                <option value="" disabled selected>Para quando necessita do serviço?</option>
+                                <option value="1">Imediatamente</option>
+                                <option value="2">Daqui uma semana</option>
+                                <option value="3">Sem previsão</option>
+                                </select>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                                <label for="textarea2">Detalhes que serão importantes ao profissional saber</label>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                <option value="" disabled selected>De que modo quer entrar em contato?</option>
+                                <option value="1">Ligação</option>
+                                <option value="2">Email</option>
+                                <option value="3">Ambos</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                <input id="cep" type="text" class="validate">
+                                <label for="cep">CEP:</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-right orange lighten-2 " type="submit" name="action">Finalizar
+                                <i class="material-icons right">send</i>
+                            </button>
+                            </div>
+                            </form>
+                        </div>
+                            </div>
+                        </div> 
                 </div>
                 </div>
-             
-
-                <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    <img src="../img/img1.jpg">
-                    <span class="card-title">Mecânico</span>
-                    <a class="btn-floating halfway-fab waves-effect orange lighten-2"><i class="material-icons">add</i></a>
-                    </div>
-                    <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                </div>
-                </div>
-
-                <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    <img src="../img/img1.jpg">
-                    <span class="card-title">Mecânico</span>
-                    <a class="btn-floating halfway-fab waves-effect orange lighten-2"><i class="material-icons">add</i></a>
-                    </div>
-                    <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-             
-            
             <!--fim do card-->
         </form>
 

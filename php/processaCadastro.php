@@ -8,16 +8,16 @@
     $nivel = $_POST ['nivel'];
     $email = $_POST ['email'];
     $senha = $_POST ['senha'];
-
-    $senha = sha1($senha);
     
+    $senha=sha1($senha);
+
     $query = "INSERT INTO cadastro (nome, cpf, CEP, telefone, nivel, email, senha) VALUES ('$nome', '$cpf', '$CEP', '$telefone', '$nivel', '$email', '$senha')";
     //echo $query; exit;
     $exe = mysqli_query ($conexao, $query);
     //print_r($query); exit;
     if($exe == 1){
-        echo "<script> alert ('Cadastrado com sucesso!'); location.href='contratante.php' </script> ";
+        echo "<script> alert ('Cadastrado com sucesso!'); location.href='../index.php' </script> ";
     }else{
-        echo "<script> alert ('Ops deu ruim'); location.href='../contratante.php' </script>";
+        echo "<script> alert ('Ops deu ruim'); location.href='../index.php' </script>";
     }
 ?>

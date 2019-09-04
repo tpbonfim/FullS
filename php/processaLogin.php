@@ -3,9 +3,8 @@
 
     $login = $_POST['usuario'];
     $senha = $_POST['senha'];
-
     
-    
+    $senha=sha1($senha);
     
     $query = "SELECT * FROM cadastro where email='$login' and senha='$senha'";
     //echo $query; exit;
@@ -13,9 +12,9 @@
     $usa = mysqli_query($conexao, $query);
     $total = mysqli_num_rows($usa);
 
-    if($exe == 1){
+    if($total == 1){
         echo "<script> alert ('Logado com sucesso!'); location.href='contratante.php' </script> ";
     }else{
-        echo "<script> alert ('Ops deu ruim'); location.href='contratante.php' </script>";
+        echo "<script> alert ('Registro não encotrado!!'); location.href='../index.php' </script>";
     }
 ?>
