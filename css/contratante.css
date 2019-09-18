@@ -16,3 +16,9 @@
 .modal-content{
     color:black;
 }
+nav{
+    background: linear-gradient(#fdcc52, #ED7F29);
+  }
+#botao{
+    background: linear-gradient(#fdcc52, #ED7F29);
+}  
